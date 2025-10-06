@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/login.cadastro.css">
+    <title>Stock Control</title>
+
+</head>
+
+<body id="principal">
+    <center>
+        <img src="./css/img/stock.jpg">
+    </center>
+
+
+    <div id="login">
+
+        <div class="caixa">
+
+
+            <h1>LOGIN</h1>
+
+            <div class="email">
+                <input type="email" placeholder="E-mail" id="loginEmail" required>
+            </div>
+
+            <div class="senha">
+                <input type="password" placeholder="Senha" id="loginSenha" required>
+            </div>
+
+            <div class="entrar">
+                <p>Ainda não tem uma conta? <a href="cadastro.html">Crie uma.</a></p>
+                <input type="button" value="Entrar" onclick="login()">
+            </div>
+
+
+
+        </div>
+        <script>
+            function login() {
+                const email = document.getElementById('loginEmail').value;
+                const senha = document.getElementById('loginSenha').value;
+                const storedEmail = localStorage.getItem('email');
+                const storedSenha = localStorage.getItem('senha');
+
+                if (email === storedEmail && senha === storedSenha) {
+                    alert('Login realizado com sucesso!');
+                    window.location.replace("telainicial.html")
+                } else {
+                    alert('Email ou senha incorretos.');
+
+                }
+            }
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0d25;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0f0d25 !important;
+}
+
+.nav-item .nav-link {
+    color: #FFF;
+}
+
+.nav-item .nav-link.active {
+    color: #cae06e;
+    font-weight: 700;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.searchInput {
+    left: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.buscar-box {
+    width: 80px;
+    height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+
+.buscar-box.ativar {
+    width: 400px;
+}
+
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+    min-width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.low-stock {
+    background-image: url(./css/img/yellowAlert.png);
+    background-size: 15%;
+    background-position-x: 60px;
+    background-repeat: no-repeat;
+}
+
+.proxima-validade {
+    background-image: url(./css/img/yellowAlert.png);
+    background-size: 10%;
+    background-position: 90px;
+    background-repeat: no-repeat;
+}
+
+.expired {
+    background-image: url(./css/img/redAlert.png);
+    background-size: 10%;
+    background-position-x: 90px;
+    background-repeat: no-repeat;
+}
+
+.expired1 {
+    background-image: url(./css/img/redAlert.png);
+    background-size: 15%;
+    background-position-x: 60px;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+#wrap tbody tr td input{
+    width: 100%;
+}
+
+navbar-toggler-icon {
+    color: #cae06e;
+}

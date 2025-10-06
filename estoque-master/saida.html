@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Stock Control</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estoque.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="localStorageDatabase.js"></script>
+</head>
+
+<body>
+    <!--Navegação-->
+    <div class="main-container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./css/img/stock.jpg" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="telaInicial.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="saida.html">Saida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="estoque.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-box">
+
+            <header class="main-header">
+
+                <h1>Saida de produtos</h1>
+
+            </header>
+
+            <div id="wrap">
+                <input type="text" id="id_produto" placeholder="ID">
+                <input type="number" id="quantidade_saida" placeholder="Quantidade de Saida">
+                <input type="number" id="valor_saida" placeholder="Valor de Saida">
+                <input type="date" id="data_saida">
+                <br>
+                <input type="text" readonly id="nome" placeholder="Nome:">
+                <input type="number" readonly id="quantidade" placeholder="Quantidade Total">
+                <input type="text" readonly id="preco" placeholder="Preço">
+                <input type="date" readonly id="validade" placeholder="Validade">
+            </div>
+
+            <div id="botoes">
+
+                <br>
+
+                <button id="btnLancarSaida">Lançar saída</button>
+
+                <button id="btnExcluir">Excluir</button>
+
+                <button id="btnEditar">Editar</button>
+
+            </div>
+
+            <div id="saida">
+                <table id="tabela_saida">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th width="50px">ID</th>
+                            <th>Nome</th>
+                            <th width="150px">Quant. Saida</th>
+                            <th width="150px">Preço Entrada</th>
+                            <th width="150px">Preço Saida</th>
+                            <th width="150px">Lucro</th>
+                            <th>Validade</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="saida.js"></script>
+</body>
+
+</html>
