@@ -38,7 +38,7 @@ a {
     height: 40px;
     padding-left: 15px;
     background-color: #1e1c2e;
-    color: #b6b6b6;
+    color: #ffffff;
 }
 
 .senha input {
@@ -75,7 +75,9 @@ h1 {
 }
 
 .caixa img {
-    width: 115px;
+    display: block;
+    margin: 0px auto; 
+    width: 120px; 
 }
 
 input:focus {
